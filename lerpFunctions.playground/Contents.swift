@@ -54,7 +54,7 @@ func biLerp(topLeft: Double, topRight: Double, bottomLeft: Double, bottomRight: 
     
     let topPoint = lerp(from: topLeft, to: topRight, percentage: xPercentage)
     let bottomPoint = lerp(from: bottomLeft, to: bottomRight, percentage: xPercentage)
-    let bilinearLerpResult = lerp(from: topPoint, to: bottomPoint, percentage: yPercentage)
+    let bilinearLerpResult = lerp(from: bottomPoint, to: topPoint, percentage: yPercentage)
     
     return(bilinearLerpResult)
 }
